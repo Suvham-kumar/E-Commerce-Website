@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Hand Made Store</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+
+        <!-- ✅ Billing Details Form -->
+        <div class="billing-details">
+            <h2>Billing Details</h2>
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="address" placeholder="Address" required>
+        </div>
+
+        <!-- ✅ Shipping Method -->
+        <div class="shipping-method">
+            <h2>Shipping Method</h2>
+            <select id="shippingMethod">
+                <option value="standard">Standard - Free</option>
+                <option value="express">Express - $5.00</option>
+            </select>
+        </div>
+
+        <!-- ✅ Payment Method -->
+        <div class="payment-method">
+            <h2>Payment Method</h2>
+            <label>
+                <input type="radio" name="payment" value="cod" required> Cash on Delivery
+            </label>
+            <label>
+                <input type="radio" name="payment" value="online"> Online Payment
+            </label>
+        </div>
+
+        <!-- ✅ Order Summary -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="order-summary-items">
+                    <!-- Order Items will be inserted here by JS -->
+                </tbody>
+            </table>
+            <h3>Total: <span id="order-total">$0.00</span></h3>
+        </div>
+
+        <!-- ✅ Place Order Button -->
+        <button id="placeOrderBtn">Place Order</button>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

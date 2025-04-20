@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.icons input {
+    padding: 5px;
+}
+
+.icons a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Hero Section */
+/* Hero Section Without Image */
+.hero {
+    text-align: center;
+    background: #f4f4f4;  /* Light gray background */
+    padding: 100px 20px;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Product Grid */
+.products {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+/* Fix Product Image Size */
+.product img {
+    width: 100%;  /* Image container ke full width tak rahe */
+    height: 200px; /* Fixed height taaki sab same dikhein */
+    object-fit: cover; /* Image ko crop kare bina adjust kare */
+    border-radius: 5px; /* Image ke corners thoda smooth karne ke liye */
+}
+
+.product button {
+    padding: 10px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: darkorange;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: orange;
+}
+
+#shopNowBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#shopNowBtn:hover {
+    background-color: #218838;
+}
